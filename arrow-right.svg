@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.781 23.113">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #25215a;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_4_14" data-name="Symbol 4 – 14" transform="translate(-669 652.046)">
+    <rect id="Rectangle_15" data-name="Rectangle 15" class="cls-1" width="21.537" height="4.581" transform="translate(669 -642.583)"/>
+    <path id="Path_4" data-name="Path 4" class="cls-1" d="M0,0,14.907,1.4l.425,4.537L.425,4.537Z" transform="translate(683.94 -652.046) rotate(45)"/>
+    <path id="Path_5" data-name="Path 5" class="cls-1" d="M.213.781,14.9-.6l-.425,4.537L-.213,5.318Z" transform="translate(680.468 -632.844) rotate(-45)"/>
+  </g>
+</svg>

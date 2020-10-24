@@ -1,0 +1,541 @@
+body {
+  font-size: calc( 12px + 2vw );
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+  background-color: #F8F4F4;
+  color: #25215A;
+  /*font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
+}
+
+#title-menu {
+  padding: 4px;
+  margin: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#mobile-menu button {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  padding: 4px;
+  margin-right: 8px;
+  min-width: 64px;
+}
+
+#mobile-menu button:hover {
+  background-color: #25215A;
+  border: none;
+}
+
+#mobile-menu button img {
+  margin-left: 16px;
+}
+
+#title-menu h1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 4px;
+  margin: 4px;
+  min-width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu a, #title-menu a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: calc(4px + 1vw);
+}
+
+#menu a {
+  margin: 0px 8px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+}
+
+#mobile-menu-hidden {
+  height: 100vh;
+  background-color: #F8F4F4;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.curr-page {
+  margin-top: 0px;
+}
+
+.underline {
+  display: block;
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.curr-page .underline {
+  display: block;
+  border: 2px solid #25215A;
+  border-radius: 4px;
+  background-color: #25215A;
+}
+
+#title-splash {
+  padding: 16px;
+  background-color: #25215A;
+  color: #F8F4F4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-section {
+  min-width: 75%;
+}
+
+.row-direction-change {
+  display: flex;
+  flex-direction: row;
+}
+
+#splash-subheadings {
+  margin-top: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ivoted-sticker {
+  max-width: 20%;
+}
+
+#announcements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  flex-direction: column;
+}
+
+#announcements .ivoted-sticker {
+  max-width: 50%;
+}
+
+.announcement {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+  min-width: 100%;
+  align-items: center;
+}
+
+.announcement img {
+  max-width: 15%;
+}
+
+.announce {
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: calc(4px + 1vw);
+  border: 2px solid #25215A;
+  border-radius: 4px;
+  margin-left: 8px;
+  margin-right: 100px;
+  padding: 8px;
+  justify-content: space-between;
+}
+
+.announce p {
+  margin: 0px;
+}
+
+.announcement.red .announce {
+  background-color: rgba(237, 81, 81, 0.13);
+}
+
+.announcement.red:hover .announce {
+  background-color: #F99A9A;
+  cursor: pointer;
+}
+
+.announcement.yellow {
+  max-width: 100%;
+}
+
+.announcement.yellow .announce {
+  background-color: rgba(237, 201, 81, 0.21);
+}
+
+.announcement.yellow:hover .announce {
+  background-color: rgba(237, 201, 81, 0.8);
+  cursor: pointer;
+}
+
+[aria-hidden="true"]{
+  display:none;
+}
+
+[aria-hidden="false"]{
+  /* font-size: calc(12px + 1vw);
+  padding: 5px;
+  margin: 5px; */
+}
+
+button {
+  padding-right: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid #25215A;
+  background-color: rgba(37, 33, 90, 0.18);
+  color: #25215A;
+  border-radius: 4px;
+  font-size: calc(4px + 1vw);
+  justify-content: space-between;
+}
+
+button:hover {
+  background-color: #25215A;
+  color: #F8F4F4;
+}
+
+button:hover img {
+  filter: brightness(0) saturate(100%);
+  filter: invert(100%) sepia(38%) saturate(10%) hue-rotate(181deg) brightness(111%) contrast(92%);;
+}
+
+button img {
+  max-width: 30%;
+  align-self: center;
+  margin-right: 32px;
+}
+
+#actions {
+  margin: calc(24px + 1vw);
+  display: grid;
+  grid-row-gap: 24px;
+  grid-column-gap: 24px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: space-around;
+  height: 100%;
+}
+
+.action-item {
+  display: block;
+  border: 2px solid #25215A;
+  border-radius: 4px;
+  background-color: rgba(37, 33, 90, 0.18);
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.action-item:hover {
+  background-color: #25215A;
+  color: #F8F4F4;
+  cursor: pointer;
+}
+
+.action-item p {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  font-size: calc(6px + 1vw);
+}
+
+.action-icon {
+  padding-top: 4px;
+  display: block;
+  max-width: 40%;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  justify-content: space-around;
+}
+
+.election-info-section {
+  display: block;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(8px + 1vw);
+  min-width: 20%;
+  margin-right: 0px;
+  min-height: 100%;
+}
+
+.election-info-section span {
+  padding: 4px 0px;
+}
+
+.election-info-section img {
+  max-width: 10%;
+}
+
+#footer {
+  padding: 16px;
+  background-color: #25215A;
+  color: #F8F4F4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#footer .row-direction-change {
+  min-width: 40%;
+}
+
+address {
+  font-family: Georgia;
+  font-size: calc(4px + 1vw);
+}
+
+.phone-numbers {
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia;
+  font-size: calc(4px + 1vw);
+  margin: 0px;
+}
+
+ul {
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+  font-size: calc(4px + 1vw);
+  list-style: none;
+  padding-left: 0px;
+}
+
+#commission {
+  display: flex;
+  flex-direction: column;
+  min-width: 40%;
+}
+
+.contact {
+  margin-right: 16px;
+}
+
+#newton-city-contact {
+  min-width: 30%;
+}
+
+#newton-city-contact .contact {
+  margin-left: 66px;
+}
+
+.newton-logo {
+  height: 48px;
+}
+
+#footer .ivoted-sticker {
+  min-width: 20%;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  #menu {
+    display: none;
+  }
+
+  #mobile-menu {
+    display: block;
+  }
+
+  /* #announcements {
+    justify-content: center;
+  } */
+
+}
+
+@media only screen and (max-width: 900px) {
+  #actions {
+    margin: calc(16px + 1vw);
+    display: grid;
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  .newton-logo {
+    height: 36px;
+  }
+
+  #newton-city-contact .contact {
+    margin-left: 48px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+
+  .election-info-section {
+    display: none;
+  }
+
+  #title-menu img {
+    max-width: 40%;
+  }
+
+  #actions {
+    margin: calc(16px + 1vw);
+    display: grid;
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  #wrapper {
+    flex-direction: column;
+  }
+
+  #announcements {
+    align-items: center;
+    justify-content: center;
+  }
+
+  #announcements .ivoted-sticker {
+    max-width: 10%;
+  }
+
+  .announcement img {
+    max-width: 10%;
+  }
+
+  .newton-logo {
+    height: 24px;
+  }
+
+  #newton-city-contact .contact {
+    margin-left: 36px;
+  }
+
+}
+
+@media only screen and (max-width: 512px) {
+  #mobile-menu button {
+    font-size: calc(8px + 1vw);
+  }
+
+  #title-splash .row-direction-change {
+    flex-direction: column;
+  }
+
+  #announcements .ivoted-sticker {
+    display: none;
+  }
+
+  #announcements {
+    align-items: center;
+    justify-content: center;
+  }
+
+  #announcements .ivoted-sticker {
+    max-width: 10%;
+  }
+
+  .announcement img {
+    max-width: 10%;
+  }
+
+  #title-menu img {
+    max-width: 40%;
+  }
+
+  #actions {
+    margin: calc(16px + 1vw);
+    display: grid;
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  #footer {
+    flex-direction: column;
+  }
+
+  #footer .row-direction-change {
+    margin: 16px;
+    justify-content: space-between;
+  }
+
+  #footer .newton-logo {
+    max-width: 80%;
+  }
+
+  #footer .ivoted-sticker {
+    align-self: center;
+    max-width: 40%;
+  }
+
+  address {
+    font-family: Georgia;
+    font-size: calc(8px + 1vw);
+  }
+
+  .phone-numbers {
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia;
+    font-size: calc(8px + 1vw);
+    margin: 0px;
+  }
+
+  ul {
+    font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+    font-size: calc(8px + 1vw);
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  #commission {
+    display: flex;
+    flex-direction: column;
+    min-width: 80%;
+  }
+
+  .contact {
+    margin-right: 16px;
+  }
+
+  #newton-city-contact {
+    min-width: 80%;
+  }
+
+  #newton-city-contact .contact {
+    margin-left: 66px;
+  }
+
+  .newton-logo {
+    height: 48px;
+  }
+}

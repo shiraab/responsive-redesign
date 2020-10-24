@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Newton MA Election Center">
+        <title>Election Center | Newton, MA</title>
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="./redesign.css" type="text/css"/>
+        <script src="./redesign.js"></script>
+    </head>
+<body>
+  <span id="total-menu">
+    <span id="title-menu">
+    <img src="./city-of-newton-with-logo-purple.svg" alt="City of Newton"/>
+    <a id="skip-nav" class="sr-only sr-only-focusable" href="#title-splash">Skip to election information</a>
+    <a id="skip-proj" class="sr-only sr-only-focusable" href="#announcements">Skip to announcements</a>
+    <a id="skip-contact" class="sr-only sr-only-focusable" href="#actions">Skip to election actions</a>
+    <div id="menu" role="navigation">
+      <a>About
+        <span class="underline"/>
+      </a>
+      <a>Residents
+        <span class="underline"/>
+      </a>
+      <a>Businesses
+        <span class="underline"/>
+      </a>
+      <a>Schools
+        <span class="underline"/>
+      </a>
+      <a class="curr-page">Election Center
+        <span class="underline"/>
+      </a>
+    </div>
+    <span id="mobile-menu" role="navigation">
+      <button id="mobile-menu-button" data-action="disclosure" aria-controls="mobile-menu-hidden" onclick="toggleMenu()">
+        Menu
+        <img src="./burger-menu.svg" alt="Hamburger menu in purple"/>
+      </button>
+    </span>
+  </span>
+  <div id="mobile-menu-hidden" aria-expanded="false" aria-hidden="true" role="navigation">
+    <a>About
+      <span class="underline"/>
+    </a>
+    <a>Residents
+      <span class="underline"/>
+    </a>
+    <a>Businesses
+      <span class="underline"/>
+    </a>
+    <a>Schools
+      <span class="underline"/>
+    </a>
+    <a class="curr-page">Election Center
+    </a>
+  </div>
+</span>
+  <div id="title-splash" role="main">
+    <span class="header-section">
+      <h1>The next election is November 3, 2020.</h1>
+      <span class="row-direction-change" id="splash-subheadings">
+        <span>
+          <h2>The deadline to register is October 24, 2020. </h2>
+          <h2>Early voting dates are October 17-30.</h2>
+        </span>
+        <img class="ivoted-sticker" src="I-voted.svg" alt="I voted sticker"/>
+      </span>
+    </span>
+    <span class="election-info-section">
+      <span>
+        <img src="./purple-check-white-back.svg"/>
+        Federal
+      </span>
+      <span>
+        <img src="./green-check-white-background.svg"/>
+        State
+      </span>
+      <span>
+        <img src="./orange-check-white-background.svg"/>
+        Local
+      </span>
+      <span>
+        <img src="./red-check-white-background.svg"/>
+        Ballot Questions
+      </span>
+    </span>
+  </div>
+  <div id="wrapper">
+    <div id="announcements" aria-expanded="false">
+      <img class="ivoted-sticker" src="i-voted-outlined.svg" alt="I voted sticker"/>
+      <h2>Announcements</h2>
+      <span class='announcements-visible'>
+        <div class="announcement red">
+          <img class="announcement-mark" src="./announcement-red.svg" alt="Alert symbol"/>
+          <a>
+          <span class="announce">
+
+              <p>COVID-19 Election Updates</p>
+              <img class="arrow" src="./arrow-right.svg" alt="Rightward arrow"/>
+
+          </span>
+          </a>
+        </div>
+        <div class="announcement red">
+          <img class="announcement-mark" src="./announcement-red.svg" alt="Alert symbol"/>
+          <a>
+          <div class="announce">
+
+              <p>Polling Location Changes</p>
+              <img class="arrow" src="./arrow-right.svg" alt="Rightward arrow"/>
+
+          </div>
+          </a>
+        </div>
+      </span>
+      <span id="announcements-hidden" aria-hidden="true">
+        <div class="announcement yellow">
+          <img class="announcement-mark" src="./announcement-yellow.svg" alt="Alert symbol"/>
+          <a>
+          <span class="announce">
+
+              <p>COVID-19 Election Updates</p>
+              <img class="arrow" src="./arrow-right.svg" alt="Rightward arrow"/>
+
+          </span>
+          </a>
+        </div>
+        <div class="announcement yellow">
+          <img class="announcement-mark" src="./announcement-yellow.svg" alt="Alert symbol"/>
+          <a>
+          <span class="announce">
+
+              <p>Polling Location Changes</p>
+              <img class="arrow" src="./arrow-right.svg" alt="Rightward arrow"/>
+
+          </span>
+          </a>
+        </div>
+      </span>
+      <button id="more-less" data-action="disclosure" aria-controls="announcements-hidden" onclick="toggleExpand()">
+        <img src="./pointer.svg"/>
+        More
+      </button>
+    </div>
+    <div id="actions" role="main">
+
+      <div class="action-item">
+        <a>
+          <img class="action-icon" src="./check-red.svg" aria-hidden="true"/>
+          <p>Check Registration Status</p>
+        </a>
+      </div>
+
+      <div class="action-item">
+        <a>
+          <img class="action-icon" src="./check-green.svg" aria-hidden="true"/>
+          <p>Vote by Mail</p>
+        </a>
+      </div>
+      <div class="action-item">
+        <a>
+          <img class="action-icon" src="./check-orange.svg" aria-hidden="true"/>
+          <p>Track Your Ballot</p>
+        </a>
+      </div>
+      <div class="action-item">
+        <a>
+          <img class="action-icon" src="./check-green.svg" aria-hidden="true"/>
+          <p>View Sample Ballots</p>
+        </a>
+      </div>
+      <div class="action-item">
+        <a>
+          <img class="action-icon" src="./check-orange.svg" aria-hidden="true"/>
+          <p>Secure Ballot Drop Box Locations</p>
+        </a>
+      </div>
+      <div class="action-item">
+        <a>
+          <img class="action-icon" src="./check-red.svg" aria-hidden="true"/>
+          <p>Early Voting at the Newton Free Library</p>
+        </a>
+      </div>
+      <div class="action-item">
+        <a>
+          <img class="action-icon" src="./check-green.svg" aria-hidden="true"/>
+          <p>Find a Polling Location</p>
+        </a>
+      </div>
+      <div class="action-item">
+        <a>
+          <img class="action-icon" src="./check-green.svg" aria-hidden="true"/>
+          <p>What’s my Ward and Precinct?</p>
+        </a>
+      </div>
+      <div class="action-item">
+        <a>
+          <img class="action-icon" src="./check-orange.svg" aria-hidden="true"/>
+          <p>US Census and Voting Information</p>
+        </a>
+      </div>
+      <div class="action-item">
+        <a>
+          <img class="action-icon" src="./check-red.svg" aria-hidden="true"/>
+          <p>Office of the City Clerk</p>
+        </a>
+      </div>
+
+      <div class="action-item">
+        <a>
+          <img class="action-icon" src="./check-green.svg" aria-hidden="true"/>
+          <p>Frequently Asked Questions</p>
+        </a>
+      </div>
+      <div class="action-item">
+        <a>
+          <img class="action-icon" src="./check-orange.svg" aria-hidden="true"/>
+          <p>Election Results</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <span id="commission">
+      <h3>Newton Election Commission</h3>
+      <div class="row-direction-change">
+        <div class="contact">
+          <h4>Contact</h4>
+          <address>
+            Address Address<br/>
+            123 Commonwealth Ave<br/>
+            Newton, MA
+          </address>
+          <span class="phone-numbers">
+            <span>617-123-1234</span>
+            <span>617-123-1212 (fax)</span>
+          </span>
+        </div>
+        <div>
+          <h4>Members</h4>
+          <ul>
+            <li>Burton McMurton, Chair</li>
+            <li>Loof Lirpa</li>
+            <li>Hermann Underwood</li>
+            <li>Ilana Garibaldi</li>
+          </ul>
+        </div>
+      </div>
+    </span>
+    <img class="ivoted-sticker" src="I-voted.svg" alt="I voted sticker"/>
+    <span id="newton-city-contact">
+      <img class="newton-logo" src="./city-of-newton-white.svg" alt="City of Newton Logo in White">
+      <div class="contact">
+        <h4>Contact</h4>
+        <address>
+          Address Address<br/>
+          123 Commonwealth Ave<br/>
+          Newton, MA
+        </address>
+        <span class="phone-numbers">
+          <span>617-123-1234</span>
+          <span>617-123-1212 (fax)</span>
+        </span>
+      </div>
+    </span>
+  </div>
+</body>
+</html>

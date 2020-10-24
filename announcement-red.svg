@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.072 46.465">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(237,81,81,0.13);
+        stroke: #25215a;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #25215a;
+        font-size: 30px;
+        font-family: HelveticaNeue-CondensedBold, Helvetica Neue;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_15_1" data-name="Symbol 15 – 1" transform="translate(-68 -931.616)">
+    <g id="Ellipse_24" data-name="Ellipse 24" class="cls-1" transform="translate(68 931.616)">
+      <ellipse class="cls-3" cx="25.036" cy="23.232" rx="25.036" ry="23.232"/>
+      <ellipse class="cls-4" cx="25.036" cy="23.232" rx="24.036" ry="22.232"/>
+    </g>
+    <text id="_" data-name="!" class="cls-2" transform="translate(87.472 965.779)"><tspan x="0" y="0">!</tspan></text>
+  </g>
+</svg>

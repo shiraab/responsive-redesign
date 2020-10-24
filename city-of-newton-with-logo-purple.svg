@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 479 81">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #25215a;
+      }
+
+      .cls-1 {
+        font-size: 64px;
+        font-family: HelveticaNeue-CondensedBold, Helvetica Neue;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-size: 48px;
+        font-family: Georgia-Italic, Georgia;
+        font-style: italic;
+      }
+
+      .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #25215a;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_25_1" data-name="Symbol 25 – 1" transform="translate(-17 -31)">
+    <text id="City" class="cls-1" transform="translate(126 93)"><tspan x="0" y="0">City</tspan></text>
+    <text id="Newton" class="cls-1" transform="translate(302 94)"><tspan x="0" y="0">Newton</tspan></text>
+    <text id="of" class="cls-2" transform="translate(238 87)"><tspan x="0" y="0">of</tspan></text>
+    <g id="Ellipse_2" data-name="Ellipse 2" class="cls-3" transform="translate(17 32)">
+      <circle class="cls-4" cx="40" cy="40" r="40"/>
+      <circle class="cls-5" cx="40" cy="40" r="38"/>
+    </g>
+  </g>
+</svg>
